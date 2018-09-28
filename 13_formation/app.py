@@ -16,11 +16,11 @@ def home():
 def authenticate():
     print(app)
     print(request)
-    print(request.args)
-    print(request.args['username'])
+    print(request.form)
+    print(request.form)
     print(request.headers)
     return render_template('responseTemplate.html',
-    username = request.args['username'],
+    username = request.form,
     requestMethod = request.method
     )
 
