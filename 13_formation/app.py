@@ -12,7 +12,7 @@ def home():
     print(app)
     return render_template('formTemplate.html')
 
-@app.route('/auth')
+@app.route('/auth', methods=['POST'])
 def authenticate():
     print(app)
     print(request)
@@ -20,7 +20,7 @@ def authenticate():
     print(request.form)
     print(request.headers)
     return render_template('responseTemplate.html',
-    username = request.form,
+    username = request.form['username'],
     requestMethod = request.method
     )
 
