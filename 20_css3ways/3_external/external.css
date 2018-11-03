@@ -1,0 +1,43 @@
+body {
+    background-color: #666666;
+}
+div{
+    background-color: #767676;
+}
+h1 {
+    text-align: center;
+    background-color: #BEBEBE;
+    color: #FFFFFF;
+}
+h2 {
+    display: inline;
+    margin-left: 10.8%;
+}
+.nav {
+    display: inline;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    float: left;
+}
+a {
+    color: #D2D2D2;
+    text-decoration: none;
+}
+
+a:hover {
+     color: #00baff;
+}
+p {
+    display: inherit;
+    margin-left: 14.5%;
+}
+.footer{
+    background-color: #565656;
+}
+.footer_text{
+    color: #666666;
+    text-align: right;
+    padding: 10px 50px 10px;
+}
