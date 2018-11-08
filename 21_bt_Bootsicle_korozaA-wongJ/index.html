@@ -1,0 +1,179 @@
+<!--
+  Team Bootsicle - Johnny Wong and Aleksandra Koroza
+  SoftDev1 pd8
+  K21 -- Who Does Frame Work For?
+  2018-11-08
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Bootsicle's Bootstrap</title>
+  </head>
+  <body>
+       <!-- A navbar can be created just by using Bootstrap's nav classes. They don't require the list-based approach. -->
+       <div class="container shadow-lg p-1 mb-5 bg-white rounded">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+              <!-- The navbar present at the top of our demo page -->
+                 <a class="navbar-brand" href="#">Bootsicle</a>
+                 <!-- JavaScript is needed for the toggle to function properly in a tiny window where nav-items cannot be seen -->
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <div class="navbar-nav">
+                           <a class="nav-item nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                           <a class="nav-item nav-link" href="#grid">Grid</a>
+                           <a class="nav-item nav-link" href="#nav">Navbar</a>
+                           <a class="nav-item nav-link" href="#forms">Forms</a>
+                      </div>
+                 </div>
+                 <form class="form-inline my-2 my-lg-0">
+                   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+            </nav>
+       </div>
+    <div class= "container">
+      <!-- Bootstrap container class -->
+      <h1>Basic Bootstrap</h1>
+      <p> Bootstrap is an open source toolkit that allows for easier formatting and implementation of web pages. Using bootstrap, the user
+      can focus on the front-end rather than building the underlying structure of the page.</p>
+      <p> Containers are the most basic element in bootstrap and are required
+        when using the Bootstrap default grid system. We see containers in action right here since there is a
+        bit of padding from the edge of the page!</p>
+      <p> Bootstrap classifies screen sizes into extra small, small, medium, large, and extra large. Demonstrated below is
+      bootstrap's grid functionality for displaying content. Bootstrap divides the page into 12 columns and, using col-md-<somenum>
+      the user specifies what percentage of the screen the row to take up</p>
+
+    </div>
+
+    <div class= "container">
+      <h1 id="grid">Grid Demo</h1>
+      <div class="row">
+        <div class = "col-md-9">
+          <!-- spans 9 columns -->
+          <h2> Grid Example 1 </h2>
+          <p> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </div>
+        <div class = "col-md-3">
+          <!-- spans remaining 3 columns -->
+          <!-- if screen is small, bumps the content below previous-->
+          <h2> Grid Example 2 </h2>
+          <p> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui rationisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class = "col-md-9">
+          <!-- spans 9 columns -->
+          <h2> Grid Example 3 </h2>
+          <p> "Sed ut perspiciatis und, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam ei ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </div>
+        <div class = "col-md-3"> <!-- can add more to class to specify what to do on smaller sized screens -->
+          <!-- spans remaining 3 columns -->
+          <!-- if screen is small, bumps the content below previous-->
+          <h2> Grid Example 4 </h2>
+          <p> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dlit, sed quia non niam, quis nostrum exercitationem ullam corporis suscipit laboriosamsequatur? Quii dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+         <h1 id="nav">Navbar Demo</h1>
+         <!-- demo of navbar present lower on page-->
+         <nav id="nav-demo" class="navbar navbar-expand-md navbar-dark bg-dark ">
+           <!-- class necessary to specify collapsing and color scheme-->
+              <a class="navbar-brand" href="#">Bootsicle</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <div class="navbar-nav">
+                     <!-- allows linking to specific content using id-->
+                   <a class="nav-link" href="#nav-1">Nav 1</a>
+                   <a class="nav-link" href="#nav-2">Nav 2</a>
+                   <a class="nav-link" href="#nav-3">Nav 3</a>
+                   </div>
+              </div>
+         </nav>
+
+         <div data-spy="scroll" data-target="#nav-demo" data-offset="0">
+              <h4 id="nav-1">Nav 1</h4>
+              <p>Bootstrap enables developers to create navbars without the use of unordered lists. By classifying
+                 elements as nav-items and as nav-links, they are styled and the extra markup of lists are avoided.
+              </p>
+              <h4 id="nav-2">Nav 2</h4>
+              <p>Navbars are commonly placed in non-static positions. Here at Bootsicle, we have decided to fix our
+                 navbar to the top of our page. Bootstrap allows for developers to classify elements like navbars to
+                 be fixed at positions on the page. They include "fixed-top", "fixed-bottom", and "sticky-top". As you may
+                 have noticed, navbars also support form controls and components such as search bars.
+              </p>
+              <h4 id="nav-3">Nav 3</h4>
+              <p> Navbars allow for linking to specific content on the page using id's as addresses. Much like with grids,
+              the user can specify the navbar's behavior with various screen sizes and can using spacing and flex utility classes
+              for controlling spacing/ alignment. In addition, there are various color schemes available to choose from. </p>
+         </div>
+    </div>
+    <div class="container">
+         <h1 id="forms">Form Demo</h1>
+         <div class="row">
+              <div class="col-md-6">
+                   <form>
+                        <div class="form-row">
+                             <div class="form-group">
+                                  <label for="inputFirstName">First Name</label>
+                                  <input type="text" class="form-control" placeholder="First Name">
+                             </div>
+                        </div>
+                        <div class="form-row">
+                             <div class="form-group">
+                                  <label for="inputLastName">Last Name</label>
+                                  <input type="text" class="form-control" placeholder="Last Name">
+                             </div>
+
+                        </div>
+                        <div class="form-row">
+                             <div class="form-group">
+                                  <label for="inputEmail">Email</label>
+                                  <input type="text" class="form-control" placeholder="Email">
+                             </div>
+
+                        </div>
+                        <div class="form-row">
+                             <div class="form-group">
+                                  <label for="inputPassword">Password</label>
+                                  <input type="text" class="form-control" placeholder="Password">
+                             </div>
+
+                        </div>
+                        <div class="form-row">
+                             <div class="form-group">
+                                  <label for="inputCPassword">Confirm Password</label>
+                                  <input type="text" class="form-control" placeholder="Confirm Password">
+                             </div>
+                        </div>
+                   </form>
+              </div>
+              <div class="col-md-6">
+                   <p> Bootstrap form classes utilize the same grid system as demonstrated before. They can be organized into form-rows
+                       and form-groups. These rows and groups can be placed into the grid system using rows and columns, or they can be
+                       replaced by form-rows and regular columns.
+                   </p>
+                   <p> Appropriate type attribute must be used on all inputs (eg. number for numerical information). Bootstrap's
+                     .form-control class can be used for textual form controls and includes styles for sizing and
+                     general appearance.
+                   </p>
+                   <p> While all features are not demonstrated on this page, Bootstrap removes much of the headache associated with
+                     forms. Bt provides facilitates the inclusion of checkboxes, radios, help text with specific guidelines, form validation, and
+                     many more features.
+                   </p>
+              </div>
+         </div>
+    </div>
+  </body>
+</html>
