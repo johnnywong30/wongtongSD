@@ -1,0 +1,250 @@
+<!--
+  Team Bootsicle - Johnny Wong and Aleksandra Koroza
+  SoftDev1 pd8
+  K23 -- How the Other Half Lives
+  2018-11-13
+-->
+
+<!-- Colors
+#e3b505
+#388d9e
+#13505b
+#040404
+#04395e
+-->
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Starter Template</title>
+    <!-- Foundation Sheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.min.css" integrity="sha256-VEEaOnBKVRoYPn4AID/tY/XKVxKEqXstoo/xZ6nemak= sha384-D46t32f421/hB30qwnim2pIcisNN5GU9+6m2Mfnd3dKpTSFidZLa08/1StEiCFId sha512-WkgzH8VKemDfwrp18r+wgbx+oHXOkfd2kJs7ocAXdGDgonXDXh88E90IRtRZRXtO0IHprxYHYlY14h+wyTsUDA==" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="top-bar" style="background-color:#04395e;">
+         <div id="top" class="top-bar-left" style="background-color:#04395e;">
+              <ul class="dropdown menu" data-dropdown-menu style="background-color:#04395e;">
+                   <li class="menu-text" style="color:#ffffff">Bootsicle</li>
+                   <li><a href="#foundation" style="color:#e3b505;"><b>Foundation</b></a></li>
+                   <li><a href="#grid" style="color:#388d9e;"><b>XY Grid</b></a></li>
+                   <li><a href="#nav" style="color:#e3b505;"><b>Navbar</a></b></li>
+                   <li><a href="#forms" style="color:#388d9e;"><b>Forms</b></a></li>
+                   <li><a href="https://groups.google.com/a/stuy.edu/forum/#!forum/softdev18-19" style="color:#e3b505;"><b>QAF</b></a></li>
+              </ul>
+         </div>
+         <div class="top-bar-right">
+              <ul class="menu" style="background-color:#04395e;">
+                   <li><input type="search" placeholder="Search"></li>
+                   <li><button type="button" class="button">Search</button></li>
+              </ul>
+         </div>
+    </div>
+    <div class="grid-container">
+         <div class="grid-x grid-margin-x">
+              <div class="cell small-12">
+                   <h3 id="foundation" class="text-center" style="color:#388d9e;">What is Foundation?</h3>
+                   <p>Foundation is an open-source web framework that lets developers forget about the complications of styling a website.
+                     Foundation relies on the usage of its <b>XY Grid System</b> to pad divs and organize the layout of the website.
+                   </p>
+              </div>
+         </div>
+         <div class="grid-x grid-margin-x">
+              <div class="cell small-12">
+                   <h4 style="color:#e3b505;">Where can I get it?</h4>
+                   <p> You can simply link Foundation's stylesheet into your page's <code>&lt;head&gt;</code> tag. You can find it below.</p>
+                   <code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.min.css"&gt;</code>
+                   <br><br><div class="primary callout"><p> If you want complete access to all of the different settings Foundation allows you to edit, <a href="https://foundation.zurb.com/sites/download/"> here is the download link.</a></p></div>
+              </div>
+         </div>
+         <div class="grid-x grid-margin-x">
+              <div class="cell small-12">
+                   <h4 id="grid" style="color:#e3b505;">XY Grid System</h4>
+                   <p> Foundation's grid system separates a webpage into grids. These grids can be further divided into cell-blocks. You can find a basic <b>grid-x</b> below.
+                   Try changing the size of the window to see how cell proportions are preserved.</p>
+              </div>
+              <div class="cell small-12">
+                   <div class="warning callout text-center"><b>I'm a 12 cell div.</b></p></div>
+              </div>
+              <div class="cell small-6">
+                   <div class="warning callout text-center"><b>I'm a 6 cell div.</b></p></div>
+              </div>
+              <div class="cell small-6">
+                   <div class="warning callout text-center"><b>I'm a 6 cell div.</b></p></div>
+              </div>
+              <div class="cell small-3">
+                  <div class="warning callout text-center"><b>I'm a 3 cell div.</b></p></div>
+             </div>
+             <div class="cell small-3">
+                  <div class="warning callout text-center"><b>I'm a 3 cell div.</b></p></div>
+             </div>
+             <div class="cell small-3">
+                  <div class="warning callout text-center"><b>I'm a 3 cell div.</b></p></div>
+             </div>
+             <div class="cell small-3">
+                  <div class="warning callout text-center"><b>I'm a 3 cell div.</b></p></div>
+             </div>
+         </div>
+         <div class="grid-x grid-margin-x">
+              <div class="cell small-4"></div>
+              <div class="cell small-4">
+                   <div class="primary callout text-center"><b>Below is our source code!</b></div>
+              </div>
+              <div class="cell small-4"></div>
+              <div class="cell small-12">
+                   <pre class="secondary callout">
+                       &lt;div class="grid-x grid-margin-x"&gt;
+                            &lt;div class="cell small-12"&gt;
+                                 &lt;h4 id="grid" style="color:#e3b505;"&gt;XY Grid System&lt;/h4&gt;
+                                 &lt;p&gt; Foundation's grid system separates a webpage into grids. These grids can be further divided into cell-blocks. You can find a basic &lt;b&gt;grid-x&lt;/b&gt; below.&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="cell small-12"&gt;
+                                 &lt;div class="warning callout text-center"&gt;&lt;b&gt;I'm a 12 cell div.&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="cell small-6"&gt;
+                                 &lt;div class="warning callout text-center"&gt;&lt;b&gt;I'm a 6 cell div.&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="cell small-6"&gt;
+                                 &lt;div class="warning callout text-center"&gt;&lt;b&gt;I'm a 6 cell div.&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="cell small-3"&gt;
+                                 &lt;div class="warning callout text-center"&gt;&lt;b&gt;I'm a 3 cell div.&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="cell small-3"&gt;
+                                 &lt;div class="warning callout text-center"&gt;&lt;b&gt;I'm a 3 cell div.&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="cell small-3"&gt;
+                                 &lt;div class="warning callout text-center"&gt;&lt;b&gt;I'm a 3 cell div.&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="cell small-3"&gt;
+                                 &lt;div class="warning callout text-center"&gt;&lt;b&gt;I'm a 3 cell div.&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                       &lt;/div&gt;</pre>
+              </div>
+       </div>
+       <div class="grid-x grid-margin-x">
+            <div class="cell small-12">
+                 <h4 id="nav" style="color:#e3b505;">Navbars</h4>
+            </div>
+            <div class="cell small-4">
+                 <ul class="vertical menu">
+                      <li><a href="#p_nav" style="color:#040404"><b>Primary Nav</b></a></li>
+                      <li><a href="#s_nav" style="color:#388d9e"><b>Success Nav</b></a></li>
+                      <li><a href="#w_nav" style="color:#040404"><b>Warning Nav</b></a></li>
+                      <li><a href="#a_nav" style="color:#388d9e"><b>Alert Nav</b></a></li>
+                      <li><a href="#top" style="color:#040404"><b>Back to Top</b></a></li>
+                 </ul>
+                 <br>
+                 <div class="cell small-4">
+                      <p> Navbars can be created easily with Foundation's classes made for <a href="https://foundation.zurb.com/sites/docs/menu.html">navigation</a>.
+                        The navbar above is a <b>vertical menu</b>. Click on the navbar links to be sent to the appropriate
+                        cell. Please note that the cells to the right demonstrate the use of callouts, which combine the functionality of panels (elements that easily outline sections of the page)
+                        and alerts (a feature used to communicate success, warnings or other information by a differing style).
+                        <b><i style="color:#e3b505"> <br>Refer to lines 131-141 for the source code.</i></b></p>
+                 </div>
+            </div>
+            <div class="cell small-8">
+                 <div class="cell small-2">
+                      <div id="p_nav" class="primary callout">
+                           <h5><b>Primary Nav</b></h5>
+                           <p>Doggo ipsum borking doggo length boy very hand that feed shibe very jealous pupper long woofer, extremely cuuuuuute borkdrive. Vvv waggy wags you are doing me a frighten length boy, fluffer big ol. Floofs wrinkler sub woofer puggorino long doggo heckin good boys and girls boof, the neighborhood pupper blop shoob aqua doggo. Pupperino sub woofer corgo much ruin diet very jealous pupper noodle horse, dat tungg tho pats vvv. Many pats bork shoober super chub, big ol puggo. Doing me a frighten lotsa pats noodle horse blep fat boi, borking doggo puggorino. Corgo big ol pupper borkf heckin doggorino, noodle horse you are doing me the shock. Very hand that feed shibe super chub waggy wags very jealous pupper floofs, ur givin me a spook boof. Such treat boof heck, ruff. Maximum borkdrive long bois doggorino shibe, I am bekom fat much ruin diet doggorino, sub woofer fat boi.</p>
+                      </div>
+                 </div>
+                 <div class="cell small-2">
+                      <div id="s_nav" class="success callout">
+                           <h5><b>Success Nav</b></h5>
+                           <p>Doggo ipsum very jealous pupper shoober much ruin diet. Pupperino heckin good boys and girls super chub wrinkler heck aqua doggo what a nice floof, corgo most angery pupper I have ever seen extremely cuuuuuute tungg. Corgo very hand that feed shibe shibe tungg h*ck, borkf I am bekom fat thicc. Long woofer tungg very jealous pupper big ol pupper thicc, pupper most angery pupper I have ever seen. Dat tungg tho shibe doing me a frighten borkdrive snoot, blop vvv.</p>
+
+                      </div>
+                 </div>
+                 <div class="cell small-2">
+                      <div id="w_nav" class="warning callout">
+                           <h5><b>Warning Nav</b></h5>
+                           <p>Doggo ipsum floofs woofer many pats. Heckin good boys aqua doggo yapper long bois pats porgo waggy wags fluffer, heckin good boys and girls noodle horse bork doggo puggo shoob. Heckin good boys tungg noodle horse such treat woofer clouds blep, floofs dat tungg tho extremely cuuuuuute many pats. Yapper wow such tempt vvv you are doin me a concern, fat boi. Blop sub woofer h*ck long water shoob porgo big ol pupper most angery pupper I have ever seen long doggo heck, borkdrive super chub wow such tempt stop it fren length boy long water shoob shibe. Heckin good boys and girls doggorino heckin good boys and girls, noodle horse. Doggo maximum borkdrive very good spot extremely cuuuuuute porgo, length boy super chub. Aqua doggo heckin big ol pupper sub woofer, big ol pupper wrinkler. shoober such treat. Boofers big ol pupper fluffer many pats, much ruin diet. Borking doggo woofer he made many woofs, very taste wow.</p>
+                      </div>
+                 </div>
+                 <div class="cell small-2">
+                      <div id="a_nav" class="alert callout">
+                           <h5><b>Alert Nav</b></h5>
+                           <p>Doggo ipsum waggy wags sub woofer blep doggo thicc doggorino tungg, stop it fren borkdrive waggy wags he made many woofs. Doggorino long woofer corgo long water shoob, big ol what a nice floof. Corgo floofs long doggo, very hand that feed shibe. Shooberino big ol blep doge stop it fren boof, doggo very jealous pupper fluffer I am bekom fat. Borking doggo you are doing me the shock snoot yapper, maximum borkdrive fluffer. Doggorino shibe boofers long bois, extremely cuuuuuute big ol.</p>
+                      </div>
+                 </div>
+            </div>
+       </div>
+       <div class="grid-x grid-margin-x">
+            <div class="cell small-12">
+                 <h4 id="forms" style="color:#e3b505;">Forms</h4>
+            </div>
+            <div class="cell small-12">
+                <p> Foundation facilitates the inclusion of form components on webpages. Shown below are some examples of forms that can be easily done with foundation!</p>
+            </div>
+            <form>
+              <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                  <label>Input Section 1
+                    <input type="text" placeholder=".medium-6.cell">
+                  </label>
+                </div>
+                <div class="medium-6 cell">
+                  <label>Input Section 2
+                    <input type="text" placeholder=".medium-6.cell">
+                  </label>
+                </div>
+                <div class="medium-8 cell">
+                <label>
+                  How many kittens?
+                  <input type="number" value="100">
+                </label>
+              </div>
+              <div class="medium-8 cell">
+              <label>
+                What is your favorite movie?
+                <textarea placeholder="None"></textarea>
+              </label>
+            </div>
+            <div class="medium-8 cell">
+            <label>Select Menu
+              <select>
+                <option value="husker">Bird</option>
+                <option value="starbuck">Cat</option>
+                <option value="hotdog">Heaven</option>
+                <option value="apollo">Food</option>
+              </select>
+            </label>
+            <div class="medium-8 cell">
+              </div>
+            <div class="small-3 cell">
+            <a href="#" class="button">Submit Button</a>
+          </div>
+          </form>
+          <div class="cell small-12">
+              <p> What is shown above is only a small snippet of the kinds of forms you can create using Foundation. See more examples <a href="https://foundation.zurb.com/sites/docs/forms.html">here</a>.
+                You should also see how we added forms in lines 183-221 in our source code.
+              </p>
+          </div>
+          <div class="cell small-12">
+               <div id="p_nav" class="primary callout">
+                    <p> Please note the usage of input type and label in the following code:
+                    <pre class="secondary callout">
+                      &lt;label&gt;
+                      How many kittens?
+                      &lt;input type="number" value="100"&gt;
+                    &lt;/label&gt;
+                  </pre>
+                  </p>
+               </div>
+          </div>
+       </div>
+       <div class="cell small-12">
+           <p> The best way to learn is to try it out! Best of luck in your Foundation adventures!
+           </p>
+       </div>
+      </div>
+       <footer class="top-bar" style="background-color:#e3b505;">
+            <a class="top-bar-left" href="#top" style="color:#040404"><b>Back to Top</b></a>
+            <b class="top-bar-right text-right">&copy; Bootsicle &mdash; Johnny Wong and Aleksandra Koroza</b>
+       </footer>
+  </body>
+</html>
