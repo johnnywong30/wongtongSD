@@ -8,10 +8,24 @@ app = Flask(__name__) #instantiate flask obj
 
 API_KEY = "34b0833e-2bd7-4614-99d8-cec395f9c68c"
 
-baseurl = "http://version1.api.memegenerator.net//Generators_Select_ByPopular?pageIndex=0&pageSize=6&days=&apiKey={0}".format(API_KEY)
-result = url_req.urlopen(baseurl).read()
-data = json.loads(result)['result']
-print(data)
+def getMeme(size):
+    baseurl = "http://version1.api.memegenerator.net//Generators_Select_ByPopular?pageIndex=0&pageSize={0}&days=&apiKey={1}".format(size, API_KEY)
+    result = url_req.urlopen(baseurl).read()
+    data = json.loads(result)['result']
+    return data
+
+data = getMeme('6')
+
+#print(data)
+rank1 = data[0]
+rank2 = data[1]
+#print(rank1)
+rank1_info = (rank1['displayName'], rank1['ranking'], rank1['imageUrl'])
+border = '==================={0}======================'
+print(border.format(rank1_info[0]))
+print('Ranking: {0}'.format(rank1_info[1]))
+print('imageUrl {0}'.format(rank1_info[2]))
+
 '''
 results = data['query']['results']['channel']
 wind_conds = results['wind']
@@ -19,7 +33,7 @@ atmosphere_conds = results['atmosphere']
 astronomy_conds = results['astronomy']
 title = results['item']['title']
 weather = results['item']['condition']
-border = '==================={0}======================'
+
 
 stuff = (wind_conds, atmosphere_conds, astronomy_conds, title, weather)
 print(border.format('WIND'))
