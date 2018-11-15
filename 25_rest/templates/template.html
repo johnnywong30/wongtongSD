@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Getting more REST</title>
+</head>
+<body>
+     <h3>{{title}}</h3>
+     <table>
+      <tr>
+        <th>Category</th>
+        <th>Value</th>
+      </tr>
+        {% for i in wind%}
+        <tr>
+          <td>{{i}}</td>
+          <td>{{wind[i]}}</td>
+        </tr>
+        {% endfor %}
+        {% for i in atmo%}
+        <tr>
+          <td>{{i}}</td>
+          <td>{{atmo[i]}}</td>
+        </tr>
+        {% endfor %}
+        {% for i in astro%}
+        <tr>
+          <td>{{i}}</td>
+          <td>{{astro[i]}}</td>
+        </tr>
+        {% endfor %}
+     </table>
+     <p> The weather is <b>{{weather}}</b> on <b>{{date}}</b>.</p>
+</body>
+
+
+<footer><a href="https://www.yahoo.com/?ilc=401" target="_blank"> <img src="https://poweredby.yahoo.com/purple.png" width="134" height="29"/> </a> </footer>
+</html>
