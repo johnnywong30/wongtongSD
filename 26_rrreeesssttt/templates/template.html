@@ -4,36 +4,50 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      th{
+        border-style: solid;
+      }
+    </style>
 
     <title>Getting more REST</title>
 </head>
 <body>
-     <h3>{{title}}</h3>
-     <table>
-      <tr>
-        <th>Category</th>
-        <th>Value</th>
-      </tr>
-        {% for i in wind%}
-        <tr>
-          <td>{{i}}</td>
-          <td>{{wind[i]}}</td>
-        </tr>
-        {% endfor %}
-        {% for i in atmo%}
-        <tr>
-          <td>{{i}}</td>
-          <td>{{atmo[i]}}</td>
-        </tr>
-        {% endfor %}
-        {% for i in astro%}
-        <tr>
-          <td>{{i}}</td>
-          <td>{{astro[i]}}</td>
-        </tr>
-        {% endfor %}
-     </table>
-     <p> The weather is <b>{{weather}}</b> on <b>{{date}}</b>.</p>
+     <h3><u>Unorthodoxed Meme Rankings</u></h3>
+     <div>
+       <table style:'float:left'>
+         <tr>
+           <th>Ranking</th>
+           <th>Meme Name</th>
+           <th>Meme</th>
+         </tr>
+         {% for meme in memeList %}
+          <tr>
+            <th>{{meme[1]}}</th>
+            <th>{{meme[0]}}</th>
+            <th><img width=200px height=200px src={{meme[2]}}></img></th>
+          </tr>
+         {% endfor %}
+       </table>
+       <br>
+       <h3><u>{{country}} Population</u></h3>
+       <h4><b> But first... your daily dose of corgi.</b></h4>
+       <img height=420px width=420px src={{doggo}}></img>
+       <table style:'float:right;'>
+         <tr>
+           <th>Date</th>
+           <th>Population</th>
+         </tr>
+         <tr>
+           <th>{{date0}}</th>
+           <th>{{pop0}}</th>
+         </tr>
+         <tr>
+           <th>{{date1}}</th>
+           <th>{{pop1}}</th>
+         </tr>
+       </table>
+     </div>
 </body>
 
 
