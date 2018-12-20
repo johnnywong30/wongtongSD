@@ -39,21 +39,49 @@ document.getElementById('fib').addEventListener('click', fibWrapper);
 
 // gcd function following Euclid's Algo
 var gcd = (a, b) => {
+  // swap a and b if a is less than b
   if (a < b) {
     var temp = a;
     a = b;
     b = temp;
   }
 
-  var r = a % b;
-  if (r == 0) return b;
-  else return gcd(b, r);
+  var remainder = a % b;
+  // return b if divisor b goes into dividend a nicely
+  if (remainder == 0){
+    return b;
+  }
+  // else return gcd between b and the remainder
+  return gcd(b, remainder);
 };
 
-var studentList = ['Joan', 'Johnny', 'a-aron', 'maf', 'brown', 'bni', 'k'];
+// gcdWrapper manages the spitting out of the gcd between the two
+// inputs of id 'gcd_num1' and id 'gcd_num2' and spits out the
+// gcd into the console and onto the page
+var gcdWrapper = () => {
+  // get two inputs
+  var a = document.getElementById('gcd_num1').value;
+  var b = document.getElementById('gcd_num2').value;
+  // make sure both inputs are filled in
+  if (a == '' || b == ''){
+    var error = 'Please fill in both inputs fam';
+    console.log(error);
+    document.getElementById('gcdspit').innerHTML = error;
+  }
+  // spit out the gcd of a and b
+  else{
+    var theGCD = gcd(a, b);
+    console.log(theGCD);
+    document.getElementById('gcdspit').innerHTML = `gcd(${a}, ${b}) is ` + theGCD;
+  }
+}
+
+// adds onclick action to the button of id 'gcd'
+document.getElementById('gcd').addEventListener('click', gcdWrapper);
 
 var randomStudent = () => {
   // select a random student from studentList
+  var studentList = ['Joan', 'Johnny', 'a-aron', 'maf', 'brown', 'bni', 'k'];
   var student = studentList[Math.floor(Math.random() * studentList.length)];
   console.log(student);
   document.getElementById('std').innerHTML = student
