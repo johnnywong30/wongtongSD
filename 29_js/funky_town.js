@@ -18,7 +18,6 @@ var fibonacci = (n) => {
         inc++;
     }
     return fibSeq[(inc - 1) % 2];
-
 }
 
 // fibWrapper manages the spitting out of the term at the fibVal index of the fibonacci
@@ -53,7 +52,7 @@ var gcd = (a, b) => {
   }
   // else return gcd between b and the remainder
   return gcd(b, remainder);
-};
+}
 
 // gcdWrapper manages the spitting out of the gcd between the two
 // inputs of id 'gcd_num1' and id 'gcd_num2' and spits out the
@@ -85,6 +84,6 @@ var randomStudent = () => {
   var student = studentList[Math.floor(Math.random() * studentList.length)];
   console.log(student);
   document.getElementById('std').innerHTML = student
-};
+}
 // adds onclick action to the button of id 'fib'
 document.getElementById('rstd').addEventListener('click', randomStudent);
