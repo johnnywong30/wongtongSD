@@ -97,7 +97,7 @@ var addFib2 = function (e) {
 };
 
 var fb = document.getElementById("fb");
-fb.addEventListener("click", addFib);
+fb.addEventListener("click", addFib2);
 
 // BEYOND!!!
 
